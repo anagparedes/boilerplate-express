@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let path = __dirname + '/views/index.html'
-let style_path = __dirname + '/public/style.css'
+let style_path = __dirname + '/public'
 
 // app.get("/",function(req, res) {
 //     res.send('Hello Express');
