@@ -1,14 +1,16 @@
 let express = require('express');
 let app = express();
 let path = __dirname + '/views/index.html'
+let style_path = __dirname + '/public/style.css'
 
 // app.get("/",function(req, res) {
 //     res.send('Hello Express');
 //   })
 
-app.get("/",function(req, res) {
+app.get("/public", function(req, res) {
     res.sendFile(path)
   })
+app.use("/public", express.static(style_path))
 
 
 
