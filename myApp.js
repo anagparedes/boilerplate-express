@@ -7,10 +7,11 @@ let style_path = __dirname + '/public'
 //     res.send('Hello Express');
 //   })
 
-app.get("/public", function(req, res) {
-    res.sendFile(path)
+app.get("/json", function(req, res) {
+  res.json({"message": "Hello json"})
   })
-app.use("/public", express.static(style_path))
+
+// app.use("/public", express.static(style_path))
 
 
 
